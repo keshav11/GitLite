@@ -1,0 +1,7 @@
+C:\Users\Keshav\Documents\SharpDevelop Projects\GitLite\GitLite\bin\Debug\GitLite.exe
+C:\Users\Keshav\Documents\SharpDevelop Projects\GitLite\GitLite\bin\Debug\GitLite.pdb
+C:\Users\Keshav\Documents\SharpDevelop Projects\GitLite\GitLite\obj\Debug\GitLite.csprojResolveAssemblyReference.cache
+C:\Users\Keshav\Documents\SharpDevelop Projects\GitLite\GitLite\obj\Debug\GitLite.exe
+C:\Users\Keshav\Documents\SharpDevelop Projects\GitLite\GitLite\obj\Debug\GitLite.pdb
+C:\Users\Keshav\Documents\SharpDevelop Projects\GitLite\GitLite\obj\Debug\GitLite.MainForm.resources
+C:\Users\Keshav\Documents\SharpDevelop Projects\GitLite\GitLite\obj\Debug\GitLite.csproj.GenerateResource.Cache
