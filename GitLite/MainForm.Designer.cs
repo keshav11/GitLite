@@ -47,29 +47,31 @@ namespace GitLite
             this.textProjectLocation = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBranch = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textCommitMessage
             // 
-            this.textCommitMessage.Location = new System.Drawing.Point(34, 186);
+            this.textCommitMessage.Location = new System.Drawing.Point(34, 129);
             this.textCommitMessage.Multiline = true;
             this.textCommitMessage.Name = "textCommitMessage";
-            this.textCommitMessage.Size = new System.Drawing.Size(662, 30);
+            this.textCommitMessage.Size = new System.Drawing.Size(668, 30);
             this.textCommitMessage.TabIndex = 2;
             this.textCommitMessage.TextChanged += new System.EventHandler(this.TextBox1TextChanged);
             // 
             // textResultBox
             // 
-            this.textResultBox.Location = new System.Drawing.Point(34, 317);
+            this.textResultBox.Location = new System.Drawing.Point(34, 230);
             this.textResultBox.Multiline = true;
             this.textResultBox.Name = "textResultBox";
-            this.textResultBox.Size = new System.Drawing.Size(813, 197);
+            this.textResultBox.Size = new System.Drawing.Size(813, 284);
             this.textResultBox.TabIndex = 2;
             this.textResultBox.TextChanged += new System.EventHandler(this.TextBox1TextChanged);
             // 
             // buttonCommit
             // 
-            this.buttonCommit.Location = new System.Drawing.Point(723, 186);
+            this.buttonCommit.Location = new System.Drawing.Point(723, 129);
             this.buttonCommit.Name = "buttonCommit";
             this.buttonCommit.Size = new System.Drawing.Size(124, 30);
             this.buttonCommit.TabIndex = 3;
@@ -79,34 +81,35 @@ namespace GitLite
             // 
             // buttonPush
             // 
-            this.buttonPush.Location = new System.Drawing.Point(208, 89);
+            this.buttonPush.Location = new System.Drawing.Point(379, 78);
             this.buttonPush.Name = "buttonPush";
-            this.buttonPush.Size = new System.Drawing.Size(123, 59);
+            this.buttonPush.Size = new System.Drawing.Size(99, 26);
             this.buttonPush.TabIndex = 5;
-            this.buttonPush.Text = "Push Current Branch";
+            this.buttonPush.Text = "Push";
             this.buttonPush.UseVisualStyleBackColor = true;
             this.buttonPush.Click += new System.EventHandler(this.Button3Click);
             // 
             // buttonPull
             // 
-            this.buttonPull.Location = new System.Drawing.Point(37, 89);
+            this.buttonPull.Location = new System.Drawing.Point(510, 78);
             this.buttonPull.Name = "buttonPull";
-            this.buttonPull.Size = new System.Drawing.Size(130, 59);
+            this.buttonPull.Size = new System.Drawing.Size(99, 26);
             this.buttonPull.TabIndex = 6;
-            this.buttonPull.Text = "Pull Current Branch";
+            this.buttonPull.Text = "Pull";
             this.buttonPull.UseVisualStyleBackColor = true;
+            this.buttonPull.Click += new System.EventHandler(this.buttonPull_Click);
             // 
             // textCommandString
             // 
-            this.textCommandString.Location = new System.Drawing.Point(34, 263);
+            this.textCommandString.Location = new System.Drawing.Point(34, 184);
             this.textCommandString.Multiline = true;
             this.textCommandString.Name = "textCommandString";
-            this.textCommandString.Size = new System.Drawing.Size(662, 29);
+            this.textCommandString.Size = new System.Drawing.Size(668, 29);
             this.textCommandString.TabIndex = 8;
             // 
             // buttonExecute
             // 
-            this.buttonExecute.Location = new System.Drawing.Point(723, 263);
+            this.buttonExecute.Location = new System.Drawing.Point(723, 184);
             this.buttonExecute.Name = "buttonExecute";
             this.buttonExecute.Size = new System.Drawing.Size(124, 29);
             this.buttonExecute.TabIndex = 9;
@@ -145,11 +148,31 @@ namespace GitLite
             this.label1.TabIndex = 11;
             this.label1.Text = "Project Location";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(251, 78);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(99, 26);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Checkout";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBranch
+            // 
+            this.textBranch.Location = new System.Drawing.Point(34, 78);
+            this.textBranch.Multiline = true;
+            this.textBranch.Name = "textBranch";
+            this.textBranch.Size = new System.Drawing.Size(190, 26);
+            this.textBranch.TabIndex = 14;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(899, 546);
+            this.Controls.Add(this.textBranch);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonExecute);
@@ -178,5 +201,7 @@ namespace GitLite
         private System.Windows.Forms.TextBox textProjectLocation;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBranch;
     }
 }

@@ -36,8 +36,9 @@ namespace GitLite
 		
 		void Button3Click(object sender, EventArgs e)
 		{
-			
-		}
+            string checkOut = "git push -u origin " + this.textBranch.Text;
+            this.textResultBox.Text = RunCommand.runCommand(checkOut, this.textProjectLocation.Text);
+        }
 		
 		void Button2Click(object sender, EventArgs e)
 		{
@@ -71,6 +72,23 @@ namespace GitLite
             {
                 textProjectLocation.Text = folderBrowserDialog1.SelectedPath;
             }
+        }
+
+        private void buttonPull_Click(object sender, EventArgs e)
+        {
+            string gitPull = "git pull";
+            this.textResultBox.Text = RunCommand.runCommand(gitPull, this.textProjectLocation.Text);
+        }
+
+        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string checkOut = "git checkout "+ this.textBranch.Text;
+            this.textResultBox.Text = RunCommand.runCommand(checkOut, this.textProjectLocation.Text);
         }
     }
 }
