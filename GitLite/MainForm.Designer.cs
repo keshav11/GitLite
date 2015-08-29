@@ -51,27 +51,27 @@ namespace GitLite
             // 
             // textCommitMessage
             // 
-            this.textCommitMessage.Location = new System.Drawing.Point(34, 211);
+            this.textCommitMessage.Location = new System.Drawing.Point(34, 186);
             this.textCommitMessage.Multiline = true;
             this.textCommitMessage.Name = "textCommitMessage";
-            this.textCommitMessage.Size = new System.Drawing.Size(662, 42);
+            this.textCommitMessage.Size = new System.Drawing.Size(662, 30);
             this.textCommitMessage.TabIndex = 2;
             this.textCommitMessage.TextChanged += new System.EventHandler(this.TextBox1TextChanged);
             // 
             // textResultBox
             // 
-            this.textResultBox.Location = new System.Drawing.Point(34, 364);
+            this.textResultBox.Location = new System.Drawing.Point(34, 317);
             this.textResultBox.Multiline = true;
             this.textResultBox.Name = "textResultBox";
-            this.textResultBox.Size = new System.Drawing.Size(813, 150);
+            this.textResultBox.Size = new System.Drawing.Size(813, 197);
             this.textResultBox.TabIndex = 2;
             this.textResultBox.TextChanged += new System.EventHandler(this.TextBox1TextChanged);
             // 
             // buttonCommit
             // 
-            this.buttonCommit.Location = new System.Drawing.Point(723, 211);
+            this.buttonCommit.Location = new System.Drawing.Point(723, 186);
             this.buttonCommit.Name = "buttonCommit";
-            this.buttonCommit.Size = new System.Drawing.Size(124, 42);
+            this.buttonCommit.Size = new System.Drawing.Size(124, 30);
             this.buttonCommit.TabIndex = 3;
             this.buttonCommit.Text = "Commit";
             this.buttonCommit.UseVisualStyleBackColor = true;
@@ -79,7 +79,7 @@ namespace GitLite
             // 
             // buttonPush
             // 
-            this.buttonPush.Location = new System.Drawing.Point(201, 106);
+            this.buttonPush.Location = new System.Drawing.Point(208, 89);
             this.buttonPush.Name = "buttonPush";
             this.buttonPush.Size = new System.Drawing.Size(123, 59);
             this.buttonPush.TabIndex = 5;
@@ -89,7 +89,7 @@ namespace GitLite
             // 
             // buttonPull
             // 
-            this.buttonPull.Location = new System.Drawing.Point(37, 106);
+            this.buttonPull.Location = new System.Drawing.Point(37, 89);
             this.buttonPull.Name = "buttonPull";
             this.buttonPull.Size = new System.Drawing.Size(130, 59);
             this.buttonPull.TabIndex = 6;
@@ -98,17 +98,17 @@ namespace GitLite
             // 
             // textCommandString
             // 
-            this.textCommandString.Location = new System.Drawing.Point(34, 287);
+            this.textCommandString.Location = new System.Drawing.Point(34, 263);
             this.textCommandString.Multiline = true;
             this.textCommandString.Name = "textCommandString";
-            this.textCommandString.Size = new System.Drawing.Size(662, 42);
+            this.textCommandString.Size = new System.Drawing.Size(662, 29);
             this.textCommandString.TabIndex = 8;
             // 
             // buttonExecute
             // 
-            this.buttonExecute.Location = new System.Drawing.Point(723, 287);
+            this.buttonExecute.Location = new System.Drawing.Point(723, 263);
             this.buttonExecute.Name = "buttonExecute";
-            this.buttonExecute.Size = new System.Drawing.Size(124, 42);
+            this.buttonExecute.Size = new System.Drawing.Size(124, 29);
             this.buttonExecute.TabIndex = 9;
             this.buttonExecute.Text = "Execute";
             this.buttonExecute.UseVisualStyleBackColor = true;

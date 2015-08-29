@@ -41,13 +41,14 @@ namespace GitLite
 		
 		void Button2Click(object sender, EventArgs e)
 		{
-			
-		}
+            string gitCommit = "git commit -m " + "\"" + this.textCommitMessage.Text + "\"";
+            this.textResultBox.Text = RunCommand.runCommand(gitCommit, this.textProjectLocation.Text);
+        }
 		
 		void Label1Click(object sender, EventArgs e)
 		{
-			
-		}
+          
+        }
 		
 		void Button5Click(object sender, EventArgs e)
 		{
